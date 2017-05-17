@@ -27,7 +27,6 @@ header {
     letter-spacing: .3rem;
     color: black;
     margin-right: 100px;
-    transition: margin-left 0.5s ease-in-out;
     visibility: hidden;
     white-space: nowrap; }
 
@@ -38,6 +37,7 @@ header {
   width: 100%;
   height: 50px;
   background-color: #ff3333;
+  z-index: 1;
   transition: background-color .5s ease-in-out; }
 
 @media (min-width: 900px) {
@@ -128,12 +128,6 @@ section {
   padding: 0;
   margin: 0;
   list-style-type: none; }
-
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-  min-height: 100%;
-  position: relative; }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
