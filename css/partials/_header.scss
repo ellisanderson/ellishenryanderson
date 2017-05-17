@@ -1,0 +1,66 @@
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:0%;
+  height:50px;
+  background-color:transparent;
+  color:white;
+  display:flex;
+  align-items:center;
+  z-index:2;
+  transition: background-color .5s ease-in-out;
+
+  .logo{
+    display: block;
+    position:fixed;
+    width:30px;
+    height:30px;
+    left:50px;
+    top:10px;
+    background-image: url('../images/ellis-logo.png');
+    background-size: contain;
+  }
+
+  h1{
+    display:none;
+    font-weight:400;
+    text-transform:uppercase;
+    font-size:1rem;
+    letter-spacing:.3rem;
+    color:black;
+    margin-right:100px;
+    transition: margin-left .5s ease-in-out ;
+    // opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+  }
+
+}
+
+.header-back{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:50px;
+  background-color:#ff3333;
+  transition: background-color .5s ease-in-out;
+}
+
+
+@media (min-width:900px) {
+  header{
+    background-color:rgba(0,0,0,.2);
+
+    h1{
+      // opacity: 1;
+      visibility: visible;
+      margin-left: 300px;
+    }
+  }
+
+  .header-back{
+    background-color: white;
+  }
+}
