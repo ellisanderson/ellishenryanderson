@@ -23,6 +23,15 @@ header{
     background-size: contain;
   }
 
+  .hamburger-trigger{
+    position: fixed;
+    left:100px;
+
+    .fa{
+      font-size: 30px;
+    }
+  }
+
   h1{
     display:none;
     font-weight:400;

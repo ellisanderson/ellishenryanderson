@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('header').animate({width:'100%'});
   $('header h1').delay(500).fadeIn(1000);
   $('section').fadeIn(1200);
-  $('nav').slideToggle(500);
+  $('.main-nav').animate({width:'250px'});
 });
 
 // NAVIGATION
@@ -12,6 +12,21 @@ $(document).ready(function(){
     $(this).next().slideToggle();
     $('.submenu').not($(this).next()).slideUp();
   });
+
+  $('.hamburger-trigger').click(function(){
+    $('.hamburger-nav').toggleClass('hamburger-nav-width');
+    $('.close-hamburger').toggleClass('shadow');
+    $('.close-hamburger .fa').fadeIn();
+    $('.menu-item').delay(200).fadeIn();
+  });
+
+  $('.close-hamburger, .submenu li a, section').click(function(){
+    $('.hamburger-nav').removeClass('hamburger-nav-width');
+    $(this).removeClass('shadow');
+    $('.close-hamburger .fa').fadeOut();
+    $('.hamburger-nav .menu-item, .hamburger-nav .submenu').fadeOut(100);
+  });
+
 });
 
 // SMOOTH SCROLLING
