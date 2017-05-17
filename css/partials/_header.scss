@@ -25,7 +25,8 @@ header{
 
   .hamburger-trigger{
     position: fixed;
-    left:100px;
+    // left:100px;
+    right:50px;
 
     .fa{
       font-size: 30px;
@@ -52,7 +53,7 @@ header{
   left:0;
   width:100%;
   height:50px;
-  background-color:#ff3333;
+  background-color:$primary-color;
   z-index: 1;
   transition: background-color .5s ease-in-out;
 }

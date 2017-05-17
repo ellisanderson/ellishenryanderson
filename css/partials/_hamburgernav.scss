@@ -1,12 +1,12 @@
 .hamburger-nav{
-  background-color: $secondary-color;
+  background-color: $primary-color;
   position: fixed;
   top:0;
   left:0;
   z-index: 3;
   height: 100vh;
   width:0;
-  transition: width .3s linear;
+  transition: width .2s linear;
   box-shadow: 5px 0px 25px $shadow;
 
   .close-hamburger{
@@ -16,13 +16,22 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
     transition: background-color .5s ease-in-out;
 
     .fa{
       display: none;
-      font-size: 2.5rem;
-      color: $shadow;
+      margin-left: 50px;
+      font-size: 2rem;
+      color: white;
+    }
+
+    p{
+      margin-left: 15px;
+      color:white;
+      font-size: 1.3rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      display: none;
     }
   }
 
@@ -31,13 +40,14 @@
     font-size: 1.3rem;
     font-weight: 100;
     text-transform: uppercase;
-    text-align: center;
+    margin-left: 50px;
     line-height: 3rem;
+    color: white;
   }
 
   .submenu{
     display: none;
-    text-align: center;
+    margin-left: 70px;
     padding:10px 0;
 
     li{

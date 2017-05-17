@@ -15,16 +15,16 @@ $(document).ready(function(){
 
   $('.hamburger-trigger').click(function(){
     $('.hamburger-nav').toggleClass('hamburger-nav-width');
-    $('.close-hamburger').toggleClass('shadow');
-    $('.close-hamburger .fa').fadeIn();
-    $('.menu-item').delay(200).fadeIn();
+    $('.close-hamburger').addClass('shadow');
+    $('.close-hamburger .fa, .close-hamburger p').fadeToggle(200);
+    $('.hamburger-nav .menu-item').fadeToggle(200);
   });
 
   $('.close-hamburger, .submenu li a, section').click(function(){
     $('.hamburger-nav').removeClass('hamburger-nav-width');
     $(this).removeClass('shadow');
-    $('.close-hamburger .fa').fadeOut();
-    $('.hamburger-nav .menu-item, .hamburger-nav .submenu').fadeOut(100);
+    $('.close-hamburger .fa, .close-hamburger p').fadeOut();
+    $('.hamburger-nav .menu-item, .hamburger-nav .submenu').fadeOut(200);
   });
 
 });

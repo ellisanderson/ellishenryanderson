@@ -24,7 +24,7 @@ header {
     background-size: contain; }
   header .hamburger-trigger {
     position: fixed;
-    left: 100px; }
+    right: 50px; }
     header .hamburger-trigger .fa {
       font-size: 30px; }
   header h1 {
@@ -44,7 +44,7 @@ header {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: #ff3333;
+  background-color: #ff5133;
   z-index: 1;
   transition: background-color .5s ease-in-out; }
 
@@ -64,7 +64,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ff3333;
+  background-color: #ff5133;
   padding: 95px 0 0 0;
   z-index: 1; }
   .main-nav .menu-item {
@@ -100,14 +100,14 @@ header {
     .main-nav .menu-item {
       visibility: visible; } }
 .hamburger-nav {
-  background-color: #f2d441;
+  background-color: #ff5133;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
   height: 100vh;
   width: 0;
-  transition: width .3s linear;
+  transition: width .2s linear;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.2); }
   .hamburger-nav .close-hamburger {
     width: 100%;
@@ -116,22 +116,30 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
     transition: background-color .5s ease-in-out; }
     .hamburger-nav .close-hamburger .fa {
       display: none;
-      font-size: 2.5rem;
-      color: rgba(0, 0, 0, 0.2); }
+      margin-left: 50px;
+      font-size: 2rem;
+      color: white; }
+    .hamburger-nav .close-hamburger p {
+      margin-left: 15px;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      display: none; }
   .hamburger-nav .menu-item {
     display: none;
     font-size: 1.3rem;
     font-weight: 100;
     text-transform: uppercase;
-    text-align: center;
-    line-height: 3rem; }
+    margin-left: 50px;
+    line-height: 3rem;
+    color: white; }
   .hamburger-nav .submenu {
     display: none;
-    text-align: center;
+    margin-left: 70px;
     padding: 10px 0; }
     .hamburger-nav .submenu li {
       padding: 5px 0; }
