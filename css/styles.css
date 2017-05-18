@@ -14,19 +14,14 @@ header {
   z-index: 2;
   transition: background-color .5s ease-in-out; }
   header .logo {
-    display: block;
     position: fixed;
     width: 30px;
     height: 30px;
-    left: 50px;
+    left: 90px;
     top: 10px;
     background-image: url("../images/ellis-logo.png");
-    background-size: contain; }
-  header .hamburger-trigger {
-    position: fixed;
-    right: 50px; }
-    header .hamburger-trigger .fa {
-      font-size: 30px; }
+    background-size: contain;
+    transition: all .5s ease-in-out; }
   header h1 {
     display: none;
     font-weight: 400;
@@ -34,7 +29,6 @@ header {
     font-size: 1rem;
     letter-spacing: .3rem;
     color: black;
-    margin-right: 100px;
     visibility: hidden;
     white-space: nowrap; }
 
@@ -51,6 +45,8 @@ header {
 @media (min-width: 900px) {
   header {
     background-color: rgba(0, 0, 0, 0.2); }
+    header .logo {
+      left: 50px; }
     header h1 {
       visibility: visible;
       margin-left: 300px; }
@@ -69,11 +65,12 @@ header {
   z-index: 1; }
   .main-nav .menu-item {
     visibility: hidden;
+    font-size: 1.3rem;
     line-height: 2.5rem;
     margin-left: 50px;
     color: white;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 400;
     transition: color .1s ease-in-out;
     cursor: pointer; }
   .main-nav .menu-item:hover {
@@ -88,17 +85,20 @@ header {
       text-transform: none;
       padding: 10px 0;
       font-size: .8rem; }
-    .main-nav .submenu a {
-      color: black;
-      text-decoration: none; }
-    .main-nav .submenu a:hover {
-      color: white; }
 
 @media (min-width: 900px) {
   .main-nav {
     visibility: visible; }
     .main-nav .menu-item {
       visibility: visible; } }
+.hamburger-trigger {
+  position: fixed;
+  top: 10px;
+  left: 50px;
+  cursor: pointer; }
+  .hamburger-trigger .fa {
+    font-size: 30px; }
+
 .hamburger-nav {
   background-color: #ff5133;
   position: fixed;
@@ -116,7 +116,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: background-color .5s ease-in-out; }
+    transition: background-color .2s ease-in-out; }
     .hamburger-nav .close-hamburger .fa {
       display: none;
       margin-left: 50px;
@@ -126,29 +126,40 @@ header {
       margin-left: 15px;
       color: white;
       font-size: 1.3rem;
-      font-weight: 100;
+      font-weight: 400;
       text-transform: uppercase;
       display: none; }
+  .hamburger-nav .close-hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
   .hamburger-nav .menu-item {
     display: none;
     font-size: 1.3rem;
-    font-weight: 100;
-    text-transform: uppercase;
+    line-height: 2.5rem;
     margin-left: 50px;
-    line-height: 3rem;
-    color: white; }
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color .1s ease-in-out;
+    cursor: pointer; }
   .hamburger-nav .submenu {
     display: none;
     margin-left: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
     padding: 10px 0; }
     .hamburger-nav .submenu li {
-      padding: 5px 0; }
+      text-transform: none;
+      padding: 10px 0;
+      font-size: .8rem; }
 
 .hamburger-nav-width {
   width: 250px; }
 
 @media (min-width: 900px) {
   .hamburger-trigger {
+    display: none; }
+
+  .hamburger-nav {
     display: none; } }
 footer {
   position: absolute;
@@ -185,6 +196,11 @@ section {
 @media (min-width: 900px) {
   section {
     margin-left: 250px; } }
+@keyframes point-left {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(-20px); } }
 * {
   padding: 0;
   margin: 0;
@@ -199,5 +215,12 @@ body {
 p {
   line-height: 1.5rem;
   font-size: .9rem; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

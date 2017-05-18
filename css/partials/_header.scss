@@ -13,24 +13,14 @@ header{
 
 
   .logo{
-    display: block;
     position:fixed;
     width:30px;
     height:30px;
-    left:50px;
+    left:90px;
     top:10px;
     background-image: url('../images/ellis-logo.png');
     background-size: contain;
-  }
-
-  .hamburger-trigger{
-    position: fixed;
-    // left:100px;
-    right:50px;
-
-    .fa{
-      font-size: 30px;
-    }
+    transition: all .5s ease-in-out;
   }
 
   h1{
@@ -40,7 +30,6 @@ header{
     font-size:1rem;
     letter-spacing:.3rem;
     color:black;
-    margin-right:100px;
     visibility: hidden;
     white-space: nowrap;
   }
@@ -62,6 +51,10 @@ header{
 @media (min-width:900px) {
   header{
     background-color:rgba(0,0,0,.2);
+
+    .logo{
+      left:50px;
+    }
 
     h1{
       visibility: visible;

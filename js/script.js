@@ -15,15 +15,13 @@ $(document).ready(function(){
 
   $('.hamburger-trigger').click(function(){
     $('.hamburger-nav').toggleClass('hamburger-nav-width');
-    $('.close-hamburger').addClass('shadow');
     $('.close-hamburger .fa, .close-hamburger p').fadeToggle(200);
     $('.hamburger-nav .menu-item').fadeToggle(200);
   });
 
   $('.close-hamburger, .submenu li a, section').click(function(){
     $('.hamburger-nav').removeClass('hamburger-nav-width');
-    $(this).removeClass('shadow');
-    $('.close-hamburger .fa, .close-hamburger p').fadeOut();
+    $('.close-hamburger .fa, .close-hamburger p').fadeOut(100);
     $('.hamburger-nav .menu-item, .hamburger-nav .submenu').fadeOut(200);
   });
 
