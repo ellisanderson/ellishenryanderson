@@ -8,6 +8,26 @@ $(document).ready(function(){
 
 // NAVIGATION
 $(document).ready(function(){
+  $('.design-link').click(function(){
+    $('.field').not($(this)).hide();
+    $('#design').show();
+  });
+
+  $('.illustration-link').click(function(){
+    $('.field').not($(this)).hide();
+    $('#illustration').show();
+  });
+
+  $('.music-link').click(function(){
+    $('.field').not($(this)).hide();
+    $('#music').show();
+  });
+
+  $('.about-link').click(function(){
+    $('.field').not($(this)).hide();
+    $('#about').show();
+  });
+
   $('.menu-item').click(function(){
     $(this).next().slideToggle();
     $('.submenu').not($(this).next()).slideUp();

@@ -17,7 +17,7 @@ header {
     position: fixed;
     width: 30px;
     height: 30px;
-    left: 90px;
+    left: 50px;
     top: 10px;
     background-image: url("../images/ellis-logo.png");
     background-size: contain;
@@ -65,7 +65,7 @@ header {
   z-index: 1; }
   .main-nav .menu-item {
     visibility: hidden;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     margin-left: 50px;
     color: white;
@@ -74,10 +74,10 @@ header {
     transition: color .1s ease-in-out;
     cursor: pointer; }
   .main-nav .menu-item:hover {
-    color: rgba(0, 0, 0, 0.5); }
+    color: black; }
   .main-nav .submenu {
     display: none;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px 0; }
@@ -93,11 +93,11 @@ header {
       visibility: visible; } }
 .hamburger-trigger {
   position: fixed;
-  top: 10px;
-  left: 50px;
+  top: 15px;
+  left: 15px;
   cursor: pointer; }
   .hamburger-trigger .fa {
-    font-size: 30px; }
+    font-size: 20px; }
 
 .hamburger-nav {
   background-color: #ff5133;
@@ -119,7 +119,7 @@ header {
     transition: background-color .2s ease-in-out; }
     .hamburger-nav .close-hamburger .fa {
       display: none;
-      margin-left: 50px;
+      margin-left: 15px;
       font-size: 2rem;
       color: white; }
     .hamburger-nav .close-hamburger p {
@@ -133,7 +133,7 @@ header {
     background-color: rgba(0, 0, 0, 0.2); }
   .hamburger-nav .menu-item {
     display: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     margin-left: 50px;
     color: white;
@@ -141,16 +141,18 @@ header {
     font-weight: 400;
     transition: color .1s ease-in-out;
     cursor: pointer; }
+  .hamburger-nav .menu-item:hover {
+    color: black; }
   .hamburger-nav .submenu {
     display: none;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 10px 0; }
     .hamburger-nav .submenu li {
       text-transform: none;
       padding: 10px 0;
-      font-size: .8rem; }
+      font-size: .9rem; }
 
 .hamburger-nav-width {
   width: 250px; }
@@ -222,5 +224,20 @@ a {
 
 a:hover {
   color: white; }
+
+#design, #illustration, #music, #about {
+  display: none; }
+
+#illustration {
+  background-color: yellow;
+  height: 100vh; }
+
+#music {
+  background-color: orange;
+  height: 100vh; }
+
+#about {
+  background-color: purple;
+  height: 100vh; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,11 +1,11 @@
 .hamburger-trigger{
   position: fixed;
-  top:10px;
-  left:50px;
+  top:15px;
+  left:15px;
   cursor: pointer;
 
   .fa{
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -31,7 +31,7 @@
 
     .fa{
       display: none;
-      margin-left: 50px;
+      margin-left: 15px;
       font-size: 2rem;
       color: white;
     }
@@ -52,7 +52,7 @@
 
   .menu-item{
     display: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height:2.5rem;
     margin-left: 50px;
     color:white;
@@ -60,12 +60,15 @@
     font-weight:400;
     transition:color .1s ease-in-out;
     cursor:pointer;
+  }
 
+  .menu-item:hover{
+    color:black;
   }
 
   .submenu{
     display:none;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom:10px;
     cursor:pointer;
     padding:10px 0;
@@ -73,7 +76,7 @@
     li{
       text-transform:none;
       padding:10px 0;
-      font-size:.8rem;
+      font-size:.9rem;
     }
   }
 }

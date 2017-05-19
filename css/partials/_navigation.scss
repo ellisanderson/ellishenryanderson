@@ -11,7 +11,7 @@
 
   .menu-item{
     visibility: hidden;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height:2.5rem;
     margin-left: 50px;
     color:white;
@@ -22,12 +22,13 @@
   }
 
   .menu-item:hover{
-    color:rgba(0,0,0,.5);
+    // color:rgba(0,0,0,.5);
+    color:black;
   }
 
   .submenu{
     display:none;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom:10px;
     cursor:pointer;
     padding:10px 0;

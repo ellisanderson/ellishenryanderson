@@ -33,3 +33,22 @@ a{
 a:hover{
   color:white;
 }
+
+#design, #illustration, #music, #about{
+  display: none;
+}
+
+#illustration{
+  background-color: yellow;
+  height: 100vh;
+}
+
+#music{
+  background-color: orange;
+  height: 100vh;
+}
+
+#about{
+  background-color: purple;
+  height: 100vh;
+}
