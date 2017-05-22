@@ -60,14 +60,32 @@ $(document).ready(function(){
   });
 });
 
-// CLICK LOGO > BACK TO TOP OF PAGE/CLOSE MENU TABS
+// CLICK LOGO or MENU-ITEM > BACK TO TOP OF PAGE
 $(document).ready(function(){
-  $('.logo').on('click', function (e) {
+  $('.logo, .menu-item').on('click', function (e) {
       e.preventDefault();
       $('html,body').animate({
           scrollTop: 0
       }, 700);
+  });
 
-      $('.submenu').slideUp();
+  $('.logo').click(function(){
+    $('.submenu').slideUp();
+  });
+});
+
+
+// // MY OWN LIGHTBOX
+$(document).ready(function(){
+  $('.lightbox-trigger').click(function(){
+    event.preventDefault();
+    var href = $(this).attr('href');
+    var alt = $(this).attr('alt');
+    $('#lightbox').fadeIn();
+    $('#lightbox-content').html('<img src="' + href + '" />' + '<p>' + alt + '</p>');
+  });
+
+  $('#lightbox-close').click(function(){
+    $('#lightbox').fadeOut();
   });
 });

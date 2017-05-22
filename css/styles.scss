@@ -5,12 +5,14 @@
 @import "partials/_hamburgernav.scss";
 @import "partials/_footer.scss";
 @import "partials/_section.scss";
+@import "partials/_lightbox.scss";
 @import "partials/_animations.scss";
 
 *{
   padding:0;
   margin:0;
   list-style-type:none;
+  box-sizing: border-box;
 }
 
 body{
@@ -39,8 +41,7 @@ a:hover{
 }
 
 #illustration{
-  background-color: yellow;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #music{
@@ -51,4 +52,9 @@ a:hover{
 #about{
   background-color: purple;
   height: 100vh;
+}
+
+img{
+  width: 100%;
+  margin-top: 20px;
 }
